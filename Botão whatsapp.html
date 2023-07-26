@@ -1,0 +1,38 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão do WhatsApp Flutuante</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        /* Estilo do botão flutuante */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 40px; /* Distância do botão em relação ao fundo da página */
+            right: 40px; /* Distância do botão em relação à direita da página */
+            background-color: #25d366; /* Cor de fundo do botão */
+            color: #fff; /* Cor do texto do botão */
+            font-size: 40px;
+            border-radius: 60px; /* Deixa o botão circular */
+            width: 70px;
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+            cursor: pointer;
+            box-shadow: 2px 2px 3px #888; /* Sombra do botão */
+            z-index: 1000; /* Z-index para garantir que o botão esteja acima de outros elementos */
+        }
+
+        /* Estilo para centralizar o ícone verticalmente */
+        .whatsapp-button i {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão do WhatsApp flutuante -->
+    <a href="https://wa.me/5511917350065"
+        target="_blank" class="whatsapp-button">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+
+</body>
