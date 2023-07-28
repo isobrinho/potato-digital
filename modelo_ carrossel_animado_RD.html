@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel de Imagens</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-inner {
+            display: flex;
+            animation: rotateCarousel 30s linear infinite;
+            /* Adiciona a animação de rotação */
+        }
+
+        .carousel-inner img {
+            max-width: 100%;
+            height: auto;
+            max-height: 200px; /* Altura máxima das imagens */
+            margin-right: 20px; /* Espaçamento entre as imagens */
+        }
+
+        .carousel-item {
+            flex-shrink: 0; /* Impede que as imagens sejam reduzidas */
+            position: relative;
+        }
+
+        .carousel-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-size: 16px;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* Animação de rotação */
+        @keyframes rotateCarousel {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-100% - 20px)); /* Adiciona o espaçamento no final */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel-container">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$8naga5sy9nj"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$8naga5sy9nj" alt="Raia"></a>
+                <div class="carousel-title">Raia</div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1679331632/$zwc8pisbu3"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1679331632/$zwc8pisbu3" alt="Lume Flex"></a>
+                <div class="carousel-title">Lume Flex</div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$u9859tmyzk"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$u9859tmyzk" alt="Simon 726"></a>
+                <div class="carousel-title">Simon 726</div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$u9nnw3egaur"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$u9nnw3egaur" alt="Simon 715"></a>
+                <div class="carousel-title">Simon 715</div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$gze7hrgm59m"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$gze7hrgm59m" alt="Stanca 780"></a>
+                <div class="carousel-title">Stanca 780</div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$5dggfjzas7t"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$5dggfjzas7t" alt="WAMPA EVO"></a>
+                <div class="carousel-title">WAMPA EVO</div>
+            </div>
+            <!-- Clone da primeira imagem para criar o efeito de rotação infinita -->
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$8naga5sy9nj"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$8naga5sy9nj" alt="Raia"></a>
+                <div class="carousel-title">Raia</div>
+                            </div>
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1679331632/$zwc8pisbu3"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1679331632/$zwc8pisbu3" alt="Lume Flex"></a>
+                <div class="carousel-title">Lume Flex</div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$u9859tmyzk"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$u9859tmyzk" alt="Simon 726"></a>
+                <div class="carousel-title">Simon 726</div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$u9nnw3egaur"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$u9nnw3egaur" alt="Simon 715"></a>
+                <div class="carousel-title">Simon 715</div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$gze7hrgm59m"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$gze7hrgm59m" alt="Stanca 780"></a>
+                <div class="carousel-title">Stanca 780</div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$5dggfjzas7t"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$5dggfjzas7t" alt="WAMPA EVO"></a>
+                <div class="carousel-title">WAMPA EVO</div>
+                            </div>
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1679331632/$zwc8pisbu3"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1679331632/$zwc8pisbu3" alt="Lume Flex"></a>
+                <div class="carousel-title">Lume Flex</div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$u9859tmyzk"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$u9859tmyzk" alt="Simon 726"></a>
+                <div class="carousel-title">Simon 726</div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$u9nnw3egaur"><img
+                        src="https://d335luupugsy2.cloudfront.net/cms/files/177081/1678306533/$u9nnw3egaur" alt="Simon 715"></a>
+                <div class="carousel-title">Simon 715</div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const carouselInner = document.querySelector(".carousel-inner");
+            const carouselItems = carouselInner.querySelectorAll(".carousel-item");
+            const titleDiv = document.querySelector(".carousel-title");
+            let currentIndex = 0;
+
+            function preloadImages() {
+                carouselItems.forEach((item) => {
+                    const link = item.querySelector("a");
+                    const image = new Image();
+                    image.onload = function () {
+                        item.querySelector("img").src = this.src;
+                    };
+                    image.src = link.href;
+                });
+            }
+
+            function updateCarousel() {
+                currentIndex = (currentIndex + 1) % (carouselItems.length / 2);
+                const translateXValue = `-${currentIndex * (100 + 20)}%`; /* Adiciona o espaçamento */
+                carouselInner.style.transform = `translateX(${translateXValue})`;
+
+                // Atualizar o título da imagem atual
+                const currentTitle = carouselItems[currentIndex].querySelector("img").alt;
+                titleDiv.textContent = currentTitle;
+            }
+
+            preloadImages();
+            updateCarousel(); // Para exibir o título da primeira imagem
+
+            // Intervalo de rotação contínua
+            setInterval(updateCarousel, 3000); // 3000ms = 3 segundos (ajuste o valor para alterar o intervalo)
+        });
+    </script>
+</body>
+
+</html>
