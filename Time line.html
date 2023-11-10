@@ -7,7 +7,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
+
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@800&display=swap" rel="stylesheet">
   <style>
     html,
     body,
@@ -16,8 +20,8 @@
     }
 
     body {
-      font-family: "Open Sans", sans-serif;
-      font-size: 14px;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 24px;
     }
 
     .container {
@@ -29,7 +33,7 @@
     }
 
     .title {
-      font-size: 38px;
+      font-size: 28px;
       color: #616161;
       font-style: italic;
       font-weight: 800;
@@ -91,7 +95,7 @@
       font-size: 42px;
       margin-bottom: 50px;
       transform: translate3d(20px, 0, 0);
-      color: #d4a024;
+      color: #3DB184;
       font-weight: 300;
       opacity: 0;
       transition: 0.2s ease 0.4s;
@@ -159,7 +163,7 @@
       text-align: center;
       opacity: 1;
       background: transparent;
-      color: #d4a024;
+      color: #3DB184;
       margin: 15px 0 !important;
       position: relative;
     }
@@ -167,22 +171,22 @@
     .timeline .swiper-pagination-bullet::before {
       content: "";
       position: absolute;
-      top: 10px;
+      top: 8px;
       left: -32.5px;
       width: 6px;
       height: 6px;
       border-radius: 100%;
-      background-color: #d4a024;
+      background-color: #3DB184;
       transform: scale(0);
       transition: 0.2s;
     }
 
     .timeline .swiper-pagination-bullet-active {
-      color: #d4a024;
+      color: #3DB184;
     }
 
     .timeline .swiper-pagination-bullet-active::before {
-      transform: scale(1);
+      transform: scale(2);
     }
 
     .timeline .swiper-button-next,
@@ -194,6 +198,7 @@
       margin-top: 0;
       z-index: 2;
       transition: 0.2s;
+      background-color: transparent
     }
 
     .timeline .swiper-button-prev {
@@ -228,7 +233,7 @@
         top: 50%;
         transform: translateY(-50%);
         width: 310px;
-        font-size: 11px;
+        font-size: 21px;
         text-align: right;
       }
 
@@ -275,7 +280,7 @@
         bottom: -12%;
         width: 240px;
         height: 50%;
-        box-shadow: -230px 0 150px 39vw rgba(0, 0, 0, 0.7);
+        box-shadow: -230px 0 150px 39vw rgba(30, 30, 30, 0.534);
       }
 
       .timeline .swiper-slide-content {
@@ -288,139 +293,112 @@
 <body>
   <!-- partial:index.partial.html -->
   <div class="container">
-    <h1 class="title">Responsive Slider Timeline</h1>
     <div class="timeline">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$3nlt264n25l)"
             data-year="09/2011">
             <div class="swiper-slide-content"><span class="timeline-year">09/2011</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="timeline-title">Setembro de 2011</h4>
+              <p class="timeline-text">Fundação, Primeiros grande projeto de EE e Vanguarda</p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$1xnr8waqr9f)"
             data-year="11/2013">
             <div class="swiper-slide-content"><span class="timeline-year">11/2013</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="timeline-title">Novembro de 2013</h4>
+              <p class="timeline-text">Modernização da iluminação do Túnel Joá Penteado em Campinas</p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$gg3v2jrwckn)"
             data-year="08/2014">
             <div class="swiper-slide-content"><span class="timeline-year">08/2014</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="timeline-title">Agosto de 2014</h4>
+              <p class="timeline-text">Projeto de eficiência energética no Túnel Rubens Ferreira Martins, em Santos/SP
+              </p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$qogcu75vnm)"
             data-year="08/2014">
             <div class="swiper-slide-content"><span class="timeline-year">08/2014</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="timeline-title">Agosto de 2014
+              </h4>
+              <p class="timeline-text">Projeto de Modernização dos semáforos de Campinas com tecnologia LED
+              </p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$f3lod0ujuob)"
             data-year="08/2014">
             <div class="swiper-slide-content"><span class="timeline-year">08/2014</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="timeline-title">Agosto de 2014</h4>
+              <p class="timeline-text">Projeto de Modernização dos semáforos de Santos com tecnologia LED</p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$09teurpmolz)"
             data-year="08/2014">
             <div class="swiper-slide-content"><span class="timeline-year">08/2014</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="timeline-title">Agosto de 2014</h4>
+              <p class="timeline-text">Projeto de Modernização dos semáforos de Sumaré com tecnologia LED</p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$09teurpmolz)"
             data-year="08/2014">
             <div class="swiper-slide-content"><span class="timeline-year">08/2014</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="timeline-title">Agosto de 2014</h4>
+              <p class="timeline-text">Projeto de eficiência energética em Americana, substituindo 1.662 módulos
+                semafóricos por LED para tornar os semáforos mais eficientes</p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$ktrra6837lp)"
             data-year="04/2016">
             <div class="swiper-slide-content"><span class="timeline-year">04/2016</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="timeline-title">Abril de 2016</h4>
+              <p class="timeline-text">Projeto de Eletroposto em parceria com a CPFL Paulista. Primeiro grande projeto de solar</p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$0oi3qo2wyzs9)"
             data-year="06/2016">
-            <div class="swiper-slide-content"><span class="timeline-year">06/2016</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="swiper-slide-content"><span class="timeline-year">Junho de 2016</span>
+              <h4 class="timeline-title">Junho de 2016</h4>
+              <p class="timeline-text">Primeiro grande projeto de energia solar Industrial > P&G e GM Gravataí</p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$djaff6n281b)"
             data-year="11/2017">
             <div class="swiper-slide-content"><span class="timeline-year">11/2017</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="timeline-title">Novembro de 2017</h4>
+              <p class="timeline-text">Projeto de eficiência energética industrial para P&G</p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$ybep9ot3b7)"
             data-year="11/2018">
             <div class="swiper-slide-content"><span class="timeline-year">08/2018</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="timeline-title">Agosto de 2018</h4>
+              <p class="timeline-text">Projeto de eficiência energética industrial para General Motors - Gravataí/RS</p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$kwmpc1ikz6k)"
             data-year="05/2019">
             <div class="swiper-slide-content"><span class="timeline-year">05/2019</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="timeline-title">Maio de 2019</h4>
+              <p class="timeline-text">Alcance de marco em 50 milhões de obras PEE executadas</p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$lc5vj0t69d)"
             data-year="08/2019">
             <div class="swiper-slide-content"><span class="timeline-year">08/2019</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="timeline-title">Agosto de 2019</h4>
+              <p class="timeline-text">Projeto de eficiência energética industrial para Fagor</p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11"
+          <div class="swiper-slide" style="background-image: url(https://d335luupugsy2.cloudfront.net/cms/files/699804/1699465597/$v50amwa8up9)"
             data-year="08/2019">
             <div class="swiper-slide-content"><span class="timeline-year">08/2019</span>
-              <h4 class="timeline-title">Our nice super title</h4>
-              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
-                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="timeline-title">Agosto de 2019</h4>
+              <p class="timeline-text">Projeto de eficiência energética industrial para Max Gear</p>
             </div>
           </div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
         <div class="swiper-pagination"></div>
       </div>
     </div>
