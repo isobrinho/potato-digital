@@ -1,36 +1,38 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
-const cors = require('cors'); // Importe o módulo 'cors'
+const cors = require('cors');
 const app = express();
 const port = 3000;
 
 app.use(express.json());
-app.use(cors()); // Use o middleware do CORS
+app.use(cors());
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'seu@gmail.com',
-    pass: 'suasenha123',
+    user: '==',
+    pass: '===',
   },
 });
 
-// Adicione este bloco na rota responsável por enviar e-mails
 app.post('/enviar-email', async (req, res) => {
   console.log('Recebendo solicitação para enviar e-mail.');
 
-  const { destinatario, assunto, corpo, anexo } = req.body;
+  const { nome, email, telefone, Empresa, Cargo, mensagem } = req.body;
+
+  // Criar um objeto somente com os dados dos campos
+  const dadosDoFormulario = { nome, email, telefone, Empresa, Cargo, mensagem };
 
   try {
     const info = await transporter.sendMail({
-      from: 'seuemail@gmail.com',
-      to: 'seuemail@gmail.com',
-      subject: 'olha o aquivo json',
-      text: 'teliga no json',
+      from: '==',
+      to: '==',
+      subject: 'olha o arquivo json',
+      text: JSON.stringify(dadosDoFormulario, null, 2),
       attachments: [
         {
           filename: 'formulario.json',
-          content: JSON.stringify(anexo, null, 2),
+          content: JSON.stringify(dadosDoFormulario, null, 2),
         },
       ],
     });
