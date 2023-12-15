@@ -180,12 +180,22 @@
       event.preventDefault();
   
       // Coletar dados do formulário
-      const formData = new FormData(event.target);
+      const formData = {
+        nome: document.getElementById('nome').value,
+        email: document.getElementById('email').value,
+        telefone: document.getElementById('telefone').value,
+        Empresa: document.getElementById('Empresa').value,
+        Cargo: document.getElementById('Cargo').value,
+        mensagem: document.getElementById('mensagem').value,
+      };
   
       // Enviar dados para o seu serviço back-end (por exemplo, usando Fetch)
       fetch('http://localhost:3000/enviar-email', {
         method: 'POST',
-        body: formData,  // Não defina o cabeçalho 'Content-Type', permita que o navegador defina automaticamente
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       })
         .then(response => response.json())
         .then(data => {
@@ -210,6 +220,7 @@
       event.target.value = value;
     });
   </script>
+  
 </body>
 
 </body>
