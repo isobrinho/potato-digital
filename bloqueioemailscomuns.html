@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Validação de E-mail</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            const emailInput = document.getElementById('email');
+            const submitButton = document.getElementById('_form_3_submit');
+
+            function validarEmail(email) {
+                // Expressão regular para validar um e-mail
+                const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                if (!regexEmail.test(email)) {
+                    return "E-mail inválido";
+                }
+
+                const [usuario, dominio] = email.split("@");
+                if (usuario.length < 3 || dominio.length < 5) {
+                    return "E-mail inválido (usuário ou domínio curto)";
+                }
+
+                const dominiosBloqueados = ["gmail.com", "hotmail.com", "yahoo.com"];
+                if (dominiosBloqueados.includes(dominio.toLowerCase())) {
+                    return "Domínio não permitido";
+                }
+
+                return "";
+            }
+
+            form.addEventListener('submit', function (event) {
+                const email = emailInput.value.trim();
+                const mensagemErro = validarEmail(email);
+                const mensagemArea = document.getElementById("email-msg");
+
+                if (mensagemErro) {
+                    event.preventDefault(); // Impede o envio do formulário
+                    mensagemArea.innerHTML = `<span style="color: red;">${mensagemErro}</span>`;
+                } else {
+                    mensagemArea.innerHTML = `<span style="color: green;">E-mail válido!</span>`;
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <form name="f1">
+        <h3>Validação de E-mail com JavaScript</h3>
+
+        <!-- Campo de e-mail -->
+        <input type="text" id="email" name="email" placeholder="seuemail@empresa.com" data-name="email">
+
+        <!-- Mensagem de validação -->
+        <div id="email-msg"></div>
+
+        <!-- Botão de enviar -->
+        <div class="_button-wrapper _full_width">
+            <button id="_form_3_submit" class="_submit" type="submit">FAZER COTAÇÃO</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
